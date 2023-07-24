@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador descendente</title>
+    <style>
+       /* li {
+            /* Vai ao primeiro li encontrado e muda a cor detudo que tem dentro
+            color: red;
+        }
+
+        li li {
+            /*Busca um li dentro de um li, e muda oque tem dentro ( primeiro Li é o pai e  o segundo li é o filho)
+            color: blue;
+        }
+
+        #lista-01 li {
+            /*procura dentro do id 1, o lie muda apenas do li
+            background: lightblue;
+        }
+        */ 
+        
+        .fundo-verde li{/* estrutura nosso html para que apenas os subitens que tenham como class fundo verde tenham o background verde*/
+            background: lightgreen;
+        }
+        .fundo-azul li{/* estrutura nosso html para que apenas os subitens que tenham como class fundo azultenham o background azul*/
+            background: lightblue;
+        }
+        li{
+            color: red;
+        }
+        .fundo-verde #sublista-01 li{
+            color:black;
+        }
+        </style>
+</head>
+
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

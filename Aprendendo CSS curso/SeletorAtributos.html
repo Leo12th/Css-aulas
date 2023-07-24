@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributos</title>
+    <style>
+
+        [title]{/*Procura por quem tenha o atributo "title"*/
+            color:rgb(104, 104, 255);
+        }
+        [title="Netflix"]{/*Procura por quem tenha o atributo "title" e seu valor sejpa = a Netlix*/
+            color:red;
+        }
+        [href="https://www.spotify.com"]{/*Procura por quem tenha o atributo "href" e seu valor sejpa = a https://www.spotify.com*/
+            color:green;
+        }
+        [title~="Stream"]{/*Procura os valores aproximados dos atribudos*/
+            color:aqua;
+        }
+        [title|="Stream"]{/*Procura os valores aproximados dos atribudos que possuam um ' - '*/
+            color:rgb(140, 0, 255);
+        }
+        [href^="http://"]{/*Procura um valor cum um prefixo em especifico*/
+            /*Para procurar por um Sufixo, basta utilizar um $*/
+            /*Para procurar independente da posição da palavra, basta colocar um '*', assim, procura onde quer que esteja apalavra */
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Netflix" href="https://www.netflix.com">Netflix</a>
+            </li>
+            <li>
+                <a title="Prime" href="https://www.primevideo.com">Prime Video</a>
+            </li>
+            <li >
+                <a title="Spotify" href="https://www.spotify.com">Spotify</a>
+            </li>
+            <li >
+                <a title="Stream HBO" href="https://www.hbo.com">HBO</a>
+            </li>
+            <li >
+                <a title="Stream-Twitch" href="https://www.twitch.tv">Twitch</a>
+            </li>
+            <li>
+                <a href="http://www.disneyplys.com">Disney Plus</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

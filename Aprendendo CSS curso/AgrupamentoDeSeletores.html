@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Seletores</title>
+    <style>
+       /* h1,p,div{
+            color:red;
+            background: black;
+        }faz com que todos que tenham com a virgula possuam as caractericas dentro das chaves*/
+        .texto,h1{/*mostrando que pode ser misturados os tipos de seletores*/
+            color:red;
+        }
+        h1,[id^="botao"]{/*agrupamento de h1 e qualquer id que comece com botao */
+            background: lightcyan;
+        }
+        p.texto{/* busca quando possui os dois atributos (um paragrafo que tnha o .texto)*/
+            background: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de seletores</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para varios seletores diferents.Para isso, podemos separar os seletores utilizando uma virgula(,).</p>
+    <div class="texto">Assim, não precisamos ficar copiando e colando os mesmo codigos para todos, nós podemos fazer um só bloco de css e reutilizar a mesma regra!
+    </div>
+    <br><br>
+    <a id = "link-referencia" href = "#">Clique aqui para ver a documentaçã</a>
+    <br><br>
+    <a id = "link-suporte" href = "#">Clique aqui para entrar em contato</a>
+    <br><br>
+    <a id = "botao-voltar" href = "#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar pagina</button>
+</body>
+</html>

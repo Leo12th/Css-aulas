@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Irmao</title>
+    <style>
+
+        div + p{/* Meio dificil de explicar, mas ele pega o irmão (que não esta dentro mas sim em igualdade) até achar o que seja igual o depois do +, nesse caso o 'p'*/
+            color:tomato;
+        }
+        .fundo-verde + p{ /*Pega e busca os irmao do .fundo-verde e procura o proximo p*/
+            background: lightgreen;
+        }
+        p + span { /*procura depois de um <p> um irmao que seja i, span*/
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fundo-verde">
+        <p> Paragrafo 1 dentro da div</p>
+        <p> Paragrafo 2 dentro da div</p>
+        <span>
+            <p> Paragrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p> Paragrafo 4 fora da div</p>
+    <p> Paragrafo 5 fora da div</p>
+
+    <div class="fundo-verde">
+        <p> Paragrafo 6 dentro da div</p>
+        <p> Paragrafo 7 dentro da div</p>
+        <span>
+            <p> Paragrafo 8 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p> Paragrafo 9 fora da div</p>
+    <p> Paragrafo 10 fora da div</p>
+
+    <div class="fundo-azul">
+        <p> Paragrafo 11 dentro da div</p>
+        <p> Paragrafo 12 dentro da div</p>
+        <span>
+            <p> Paragrafo 13 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p> Paragrafo 14 fora da div</p>
+    <p> Paragrafo 15 fora da div</p>
+
+</body>
+
+</html>
